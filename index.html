@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Семестровая работаt</title>
+    <title>Главная - Минималистичный Сайт</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <div id="header">Хэдер</div>
+    <div id="header">Главная</div>
     <div id="menu">
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -18,36 +19,90 @@
             <li><a href="pages/contacts.html">Контакты</a></li>
         </ul>
     </div>
-    <div id="content">
-        <p>Информация об авторе</p>
-        <img src="images/photo.png" alt="Фото автора" width="200" height="250">
-        <p>Фуженко Аким Александрович</p>
-        <p>ЭФБО-07-24</p>
-        <p>Обо мне: Я родился в Москве в 70-м на краю города. Глупость рано
-            ударила в голову. В четыре активно ругался.
-            Потом школа, форма, драки, клей. Так я становился сильней. Воровал деньги в
-            раздевалке.</p>
-        <div>Навык 1</div>
-        <div>Навык 2</div>
-        <div>Навык 3</div>
-        <div>Навык 4</div>
-        <div>
-            Мой опыт работы:
-            <div>
-                Опыт 1<br>
-                Работал фантазёром. Сочинял и праздновал.
-            </div>
-            <div>
-                Опыт 2<br>
-                Работал воровством. Воровал и продавал.
-            </div>
-            <div>
-                Опыт 3<br>
-                Работал рэпером. Читал и пел.
+
+    <main id="home">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="./images/author.jpg" alt="Фото автора">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Фуженко Аким Александрович</h1>
+                        <div class="profile-group">ЭФБО-07-24</div>
+                        <div class="profile-title">Веб-разработчик</div>
+                    </div>
+                </div>
+
+                <div class="profile-about">
+                    <h2>Обо мне</h2>
+                    <p>Студент с большим интересом к веб-разработке и современным технологиям. 
+                    Увлекаюсь созданием минималистичных и функциональных интерфейсов. 
+                    Постоянно изучаю новые подходы в разработке и дизайне.</p>
+                </div>
+
+                <div class="profile-skills">
+                    <h2>Навыки</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-experience">
+                    <h2>Опыт работы</h2>
+                    <div class="experience-timeline">
+                        <div class="experience-item">
+                            <div class="experience-date">2024 - настоящее время</div>
+                            <div class="experience-content">
+                                <h3>Frontend разработчик</h3>
+                                <p>Создание современных веб-интерфейсов с использованием актуальных технологий и подходов к разработке.</p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-date">2023 - 2024</div>
+                            <div class="experience-content">
+                                <h3>UI/UX стажер</h3>
+                                <p>Изучение принципов дизайна интерфейсов и создание пользовательских макетов.</p>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-date">2022 - 2023</div>
+                            <div class="experience-content">
+                                <h3>Веб-дизайнер фрилансер</h3>
+                                <p>Создание макетов и прототипов для небольших проектов и стартапов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="footer">Футер</div>
+    </main>
+
+    <div id="footer">© 2025 Компания Аким</div>
 </body>
 
 </html>
