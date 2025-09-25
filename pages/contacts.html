@@ -19,9 +19,70 @@
     </div>
     
     <div id="contacts">
-        <div class="email"></div>
-        <div class="geo"></div>
-        <button class="call">Позвонить мне</button>
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-icon email-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a class="contact-link" href="mailto:akim.fuzhenko@gmail.com">akim.fuzhenko@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon phone-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 16.92V19.92C22 20.9 21.11 21.8 20.12 21.8C9.07 21.8 0.12 12.85 0.12 1.8C0.12 0.81 1.02 -0.08 2.02 -0.08H5.02C5.57 -0.08 6.02 0.37 6.02 0.92V4.49C6.02 5.04 5.57 5.49 5.02 5.49H3.22C4.32 8.99 7.01 11.68 10.51 12.78V10.98C10.51 10.43 10.96 9.98 11.51 9.98H15.08C15.63 9.98 16.08 10.43 16.08 10.98V13.98C16.08 14.53 15.63 14.98 15.08 14.98H12.08" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Телефон</h3>
+                    <a class="contact-link" href="tel:+79123456789">+7 (912) 345-67-89</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon location-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.03 7.03 1 12 1S21 5.03 21 10Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Местоположение</h3>
+                    <div class="contact-text">Москва, Россия</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 8C16 10.21 14.21 12 12 12S8 10.21 8 8 9.79 4 12 4 16 5.79 16 8ZM12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a class="contact-link" href="https://github.com/akimfug" target="_blank">GitHub</a>
+                        <a class="contact-link" href="https://t.me/akimonF" target="_blank">Telegram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Свяжитесь со мной</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
     </div>
     
     <div id="footer">© 2025 Компания Аким</div>
